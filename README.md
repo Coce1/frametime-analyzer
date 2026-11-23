@@ -1,6 +1,6 @@
 # frametime-analyzer
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/frametime-analyzer/blob/main/notebooks/frametime_colab.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Coce1/frametime-analyzer/blob/main/notebooks/frametime_colab.ipynb)
 
 A small Python tool that analyses **frame-time captures** (CSV files with one frame time per row) from a game or a 3D demo: average FPS, percentiles, 1% / 0.1% lows, stutter detection, charts, and a before/after comparison that flags regressions.
 
@@ -20,7 +20,7 @@ Nothing is saved to your Google Drive: uploaded files stay in memory for the ses
 ### Option 2: on your own machine (Python 3.9+)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/frametime-analyzer.git
+git clone https://github.com/Coce1/frametime-analyzer.git
 cd frametime-analyzer
 
 # create and activate a virtual environment
