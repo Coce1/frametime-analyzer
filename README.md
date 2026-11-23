@@ -6,7 +6,7 @@ A small Python tool that analyses **frame-time captures** (CSV files with one fr
 
 It is a personal learning project about GPU / graphics performance measurement, built with the help of an AI assistant (Claude), then reviewed and tested. It is a simple statistics tool, not a profiler: it tells you *that* frame pacing got worse, not *why*.
 
-> **About the data in this repository.** All numbers produced by the tests and by the demo cell come from **synthetic data** (random numbers with known properties). They are not measurements of any real game or GPU. Real results, if any, go in the section [Results on real captures](#results-on-real-captures).
+> **About the data in this repository.** All numbers produced by the tests and by the demo cell come from **synthetic data** (random numbers with known properties). They are not measurements of any real game or GPU, and the tool has not been validated on real captures yet.
 
 ## Two ways to run it
 
@@ -60,20 +60,6 @@ Output: numbers in the terminal and a chart saved as `frametimes.png` (use `--pl
 - Stutter detection is a heuristic. Slowdowns longer than about half the window are absorbed into the baseline and not flagged (they still appear in the averages and percentiles). The detection loop is plain Python, so it is slow on very long captures.
 - Skipped rows are not counted or reported.
 - Tests use synthetic data only.
-
-## Results on real captures
-
-*Intentionally empty: no real measurement is included yet.*
-
-- Application: `[game or demo]`
-- Machine: `[GPU, CPU, RAM, driver, OS]`
-- Settings / scene / capture tool: `[resolution, preset, how the capture was made]`
-- Runs per build: `[N]`
-
-| Capture | Frames | Avg FPS | 1% low | 0.1% low | p99 (ms) | Stutters |
-|---|---:|---:|---:|---:|---:|---:|
-| `[file 1]` | | | | | | |
-| `[file 2]` | | | | | | |
 
 ## Repository layout
 
